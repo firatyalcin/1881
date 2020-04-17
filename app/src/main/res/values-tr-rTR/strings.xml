@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="selectdif">Oyun Modu</string>
+    <string name="difeasy">Acemi</string>
+    <string name="difmedium">Çılgın</string>
+    <string name="difhard">Zıvanadan Çıkmış</string>
+
+    <string name="gameover">Oyun Bitti</string>
+
+    <string name="share">Tam senlik bir oyun buldum bir bakmak ister misin? https://play.google.com/store/apps/details?id=com.firatyalcin.a1881</string>
+
+    <string name="maxnumberselect">Bu bölümde daha fazla sayı seçemezsin.</string>
+    <string name="quitdialogtitle">Olacak iş değil! Bırakıyor musun?</string>
+    <string name="quitdialogmessage">Çıkarsan daha sonra kaldığın yerden devam edemezsin.</string>
+    <string name="dialogyes">Evet</string>
+    <string name="dialogno">Hayır</string>
+    <string name="confirm">Onayla</string>
+    <string name="toomuch">Biraz fazla oldu</string>
+    <string name="notenough">Biraz az oldu</string>
+    <string name="selectnumbers">Toplam {0} sayı seçmen gerekiyor</string>
+    <string name="notoken">Eyvah! Token bitmiş!</string>
+    <string name="selectcells">Hay aksi! Seçebileceğin hücre kalmamış!</string>
+
+    <string-array name="gostats">
+        <item>Seviye</item>
+        <item>Saniye</item>
+        <item>Seçim</item>
+        <item>İpucu</item>
+    </string-array>
+    <string name="shr">1881\'i Paylaş!</string>
+    <string name="notfoundgp">Cihazında Google Play bulunamadı!</string>
+</resources>

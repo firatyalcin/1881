@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/scoreboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cup" />
+
+            <TextView
+                android:id="@+id/bestscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:text="0"
+                android:textColor="#FFBB00"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scoreboard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp">
+
+            <ImageButton
+                android:id="@+id/play"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="224dp"
+                android:layout_height="108dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/main_buttons"
+                android:backgroundTint="#4285f4"
+                android:src="@drawable/play" />
+
+            <ImageButton
+                android:id="@+id/hint_main"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_below="@id/play"
+                android:layout_alignStart="@id/play"
+                android:background="@drawable/main_buttons"
+                android:backgroundTint="#34A853"
+                android:src="@drawable/hint_main" />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@id/hint_main"
+                android:layout_alignEnd="@id/hint_main"
+                android:layout_marginTop="-5dp"
+                android:layout_marginEnd="-5dp"
+                android:background="@drawable/confirm"
+                android:backgroundTint="#d50000">
+
+                <TextView
+                    android:id="@+id/tokens"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="15"
+                    android:textColor="#FFF" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/star"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_below="@id/play"
+                android:layout_alignEnd="@id/play"
+                android:background="@drawable/main_buttons"
+                android:backgroundTint="#F65314"
+                android:src="@drawable/star" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/git"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/git" />
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="16dp"
+            android:text="@string/app_name"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/share" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

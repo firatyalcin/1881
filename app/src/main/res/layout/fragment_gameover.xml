@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOverFragment">
+
+    <TextView
+        android:id="@+id/go"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginTop="48dp"
+        android:textColor="#F65314"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/gameover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_margin="32dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/go"
+        app:layout_constraintBottom_toTopOf="@id/goactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/cup"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/goscore"
+                android:textStyle="bold"
+                android:layout_marginStart="56dp"
+                android:text="28.956"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/level"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/golevel"
+                android:textStyle="bold"
+                android:layout_marginStart="56dp"
+                android:text="3 Level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/time"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/gotime"
+                android:textStyle="bold"
+                android:layout_marginStart="56dp"
+                android:text="256 Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/touch"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/goclick"
+                android:textStyle="bold"
+                android:layout_marginStart="56dp"
+                android:text="78 Click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/hint_main"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:tint="#FBBC05" />
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/gohint"
+                android:textStyle="bold"
+                android:layout_marginStart="56dp"
+                android:text="2 Hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/goactions"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/restart"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="163dp"
+            android:layout_height="98dp"
+            android:background="@drawable/main_buttons"
+            android:backgroundTint="#34A853"
+            android:src="@drawable/restart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/home" />
+
+        <ImageButton
+            android:id="@+id/home"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="163dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/main_buttons"
+            android:backgroundTint="#4285F4"
+            android:src="@drawable/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/restart" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

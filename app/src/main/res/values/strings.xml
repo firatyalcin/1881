@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name" translatable="false">1881</string>
+
+    <string name="main_fragment_label" translatable="false">Main Fragment</string>
+    <string name="game_fragment_label" translatable="false">Game Fragment</string>
+    <string name="gameover_fragment_label" translatable="false">Game Over Fragment</string>
+
+    <string name="selectdif">Game Mode</string>
+    <string name="difeasy">Easy</string>
+    <string name="difmedium">Medium</string>
+    <string name="difhard">Hard</string>
+
+    <string name="gameover">Game Over</string>
+
+    <string name="maxnumberselect">You can\'t select more numbers in this level or mode.</string>
+    <string name="quitdialogtitle">Too much for you huh?</string>
+    <string name="quitdialogmessage">If you leave me here I won\'t be here when you came back!</string>
+    <string name="dialogyes">Yes</string>
+    <string name="dialogno">No</string>
+    <string name="confirm">Confirm</string>
+    <string name="toomuch">Ouch! That is too much</string>
+    <string name="notenough">I think you can do higher</string>
+    <string name="selectnumbers">You need to pick {0} numbers</string>
+    <string name="notoken">Oupsie! You have no token (sad but true)</string>
+    <string name="share">Check this out! This game is mind fu… blowing. https://play.google.com/store/apps/details?id=com.firatyalcin.a1881</string>
+    <string name="selectcells">Oops! There was no cell left to select!</string>
+    <string name="shr">Share 1881!</string>
+    <string name="notfoundgp">Google Play not found on you device!</string>
+
+    <string-array name="gostats">
+        <item>Level</item>
+        <item>Second</item>
+        <item>Click</item>
+        <item>Hint</item>
+    </string-array>
+
+    <string-array name="colors" translatable="false">
+        <item>4285f4</item>
+        <item>FBBC05</item>
+        <item>34A853</item>
+        <item>F65314</item>
+    </string-array>
+</resources>

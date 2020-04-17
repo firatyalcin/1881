@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainFragment">
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.firatyalcin.a1881.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            app:enterAnim="@anim/slide"
+            app:popEnterAnim="@anim/wait"
+            android:id="@+id/action_MainFragment_to_GameFragment"
+            app:destination="@id/GameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/GameFragment"
+        android:name="com.firatyalcin.a1881.GameFragment"
+        android:label="@string/game_fragment_label"
+        tools:layout="@layout/fragment_game">
+
+        <argument
+            android:defaultValue="200"
+            android:name="time"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="score"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="1"
+            android:name="level"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="difficulty"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="passtime"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="click"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="hint"
+            app:argType="integer" />
+
+        <action
+            app:enterAnim="@anim/slide"
+            app:popEnterAnim="@anim/wait"
+            android:id="@+id/New_Level"
+            app:destination="@id/GameFragment" />
+
+        <action
+            app:enterAnim="@anim/slide"
+            app:popEnterAnim="@anim/wait"
+            android:id="@+id/GameOver"
+            app:destination="@id/GameOverFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/GameOverFragment"
+        android:name="com.firatyalcin.a1881.GameOverFragment"
+        android:label="@string/gameover_fragment_label"
+        tools:layout="@layout/fragment_gameover">
+
+        <argument
+            android:defaultValue="0"
+            android:name="score"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="level"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="time"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="click"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="hint"
+            app:argType="integer" />
+
+        <argument
+            android:defaultValue="0"
+            android:name="difficulty"
+            app:argType="integer" />
+
+        <action
+            app:enterAnim="@anim/slide"
+            app:popEnterAnim="@anim/wait"
+            android:id="@+id/New_Game"
+            app:destination="@id/GameFragment" />
+
+        <action
+            app:enterAnim="@anim/slide"
+            app:popEnterAnim="@anim/wait"
+            app:popUpTo="@id/nav_graph"
+            android:id="@+id/action_GameOverFragment_to_MainFragment"
+            app:destination="@id/MainFragment" />
+    </fragment>
+</navigation>
